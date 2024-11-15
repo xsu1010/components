@@ -1,0 +1,30 @@
+import {Canvas, Controls, Meta, Source, Subtitle, Title } from "@storybook/blocks";
+import * as ComponentStories from './test-input.stories';
+
+<Meta of={ComponentStories} />
+
+<Title/>
+
+<Subtitle>
+  Inputs allow you to input.
+</Subtitle>
+
+# Setup
+
+To use this component, add the following to your project:
+
+<Source language="ts" dark code={`
+  import TestInput from "@xsu1010/components/input";
+`}>
+</Source>
+
+# Primary
+<Canvas of={ComponentStories.Primary} />
+
+# Secondary
+<Canvas of={ComponentStories.Secondary} />
+
+
+# Playground
+<Canvas of={ComponentStories.Playground} />
+<Controls of={ComponentStories.Playground} />

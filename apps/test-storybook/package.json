@@ -1,0 +1,29 @@
+{
+  "name": "test-storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.4.4",
+    "@storybook/addon-themes": "^8.4.4",
+    "@storybook/blocks": "^8.4.4",
+    "@storybook/manager-api": "^8.4.4",
+    "@storybook/test": "^8.4.4",
+    "@storybook/theming": "^8.4.4",
+    "@storybook/web-components": "^8.4.4",
+    "@storybook/web-components-vite": "^8.4.4",
+    "storybook": "^8.4.4",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
+  }
+}

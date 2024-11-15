@@ -1,0 +1,58 @@
+import { Source } from "@storybook/blocks";
+
+# Hey there! 👋
+
+This is a sample web component library, built with [Lit](https://lit.dev/).
+
+## Getting Started
+
+To get started, install the component bundle:
+
+<Source dark code={`
+npm install @xsu1010/components
+`}/>
+
+## Usage
+
+This library provides two simple components: a button and an input field.
+
+Its theming is based on a CSS variable approach, which allows for a multi-brand setup by simply swapping the CSS file to obtain the desired look and feel.
+
+To import the components, first you need to import the tokens according to which brand you want to use.
+
+For example, here's how to import them into a CSS file
+
+<Source dark language="css" code={`
+/* styles.css */
+
+/* Main brand */
+@import "@xsu1010/components/dist/src/tokens/main.css";
+/* Secondary brand */
+@import "@xsu1010/components/dist/src/tokens/sub.css";
+`}>
+</Source>
+
+Now, you can start importing the components into the project!
+
+<Source language="html" dark code={`
+<script>
+  import TestButton from "@xsu1010/components/button";
+  import TestInput from "@xsu1010/components/input";
+</script>
+
+<!-- If you imported the main brand -->
+<div class="main-brand">
+  <test-button>Button label</test-button>
+  <test-input label="Label"></test-input>
+</div>
+
+<!-- If you imported the secondary brand -->
+<div class="sub-brand">
+  <test-button>Button label</test-button>
+  <test-input label="Label"></test-input>
+</div>
+  `}/>
+
+Check the sidebar for further documentation on the components. You can also change the brand theming on the top bar.
+
+Thank you so much for checking this out!
