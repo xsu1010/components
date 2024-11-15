@@ -1,0 +1,29 @@
+{
+  "name": "@xsu1010/test-ds",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./button": "./dist/src/button.js",
+    "./input": "./dist/src/input.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@xsu1010/test-button": "workspace:*",
+    "@xsu1010/test-input": "workspace:*",
+    "lit": "^3.2.1"
+  }
+}

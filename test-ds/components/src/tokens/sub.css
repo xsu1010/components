@@ -1,0 +1,18 @@
+.sub-brand {
+  --test-input-font-family: "Nunito Sans", sans-serif;
+  --test-input-padding: 1rem 1rem;
+  --test-input-border: 2px solid #333;
+  --test-input-border-radius: 4px;
+  --bg-test-input-primary: #eee;
+  --fg-test-input-primary: #000;
+  --bg-test-input-secondary: #ffaaaa;
+  --fg-test-input-secondary: #000;
+  --test-button-font-family: "Nunito Sans", sans-serif;
+  --test-button-font-weight: bold;
+  --test-button-padding: 0.5rem 2rem;
+  --test-button-border-radius: 64px;
+  --bg-test-button-primary: #99facc;
+  --fg-test-button-primary: #000;
+  --bg-test-button-secondary: #000;
+  --fg-test-button-secondary: #fff;
+}

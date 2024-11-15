@@ -1,0 +1,30 @@
+import {Canvas, Controls, Meta, Source, Subtitle, Title } from "@storybook/blocks";
+import * as ComponentStories from './test-button.stories';
+
+<Meta of={ComponentStories} />
+
+<Title/>
+
+<Subtitle>
+  Buttons allow you to button.
+</Subtitle>
+
+# Setup
+
+To use this component, add the following to your project:
+
+<Source language="ts" dark code={`
+  import TestButton from "@xsu1010/components/button";
+`}>
+</Source>
+
+# Primary
+<Canvas of={ComponentStories.Primary} />
+
+# Secondary
+<Canvas of={ComponentStories.Secondary} />
+
+
+# Playground
+<Canvas of={ComponentStories.Playground} />
+<Controls of={ComponentStories.Playground} />
